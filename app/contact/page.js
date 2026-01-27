@@ -6,6 +6,7 @@ const Contact = () => {
     <div>
       <Navbar />
       <ComingSoon title="Contact Us" />
+      <p>test</p>
     </div>
   );
 };
