@@ -131,7 +131,6 @@ const Contact = () => {
                     <MapPin color="black" size={16} />
                     <p
                       className={`${inter.className} text-xs text-gray-600 mt-1 font-medium`}
-                      // style={{ fontFamily: "var(--font-inter)" }}
                     >
                       123 sass street, Innovate City, Techland
                     </p>
