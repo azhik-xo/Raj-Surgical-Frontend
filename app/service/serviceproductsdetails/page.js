@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { Suspense, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -52,7 +52,7 @@ const SERVICES = [
   }
 ];
 
-const ServiceProductsDetailsPage = () => {
+function ServiceContent() {
   const searchParams = useSearchParams();
   const name = searchParams.get('name') || '';
 
@@ -61,9 +61,7 @@ const ServiceProductsDetailsPage = () => {
   }, [name]);
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-
+    <>
       <section className="px-6 md:px-16 lg:px-28 py-10 md:py-16">
         <div className="max-w-6xl mx-auto">
           <div className="mb-6">
@@ -148,6 +146,17 @@ const ServiceProductsDetailsPage = () => {
       </section>
 
       <FooterSection />
+    </>
+  );
+}
+
+const ServiceProductsDetailsPage = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+        <ServiceContent />
+      </Suspense>
     </div>
   );
 };
