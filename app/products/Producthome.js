@@ -28,7 +28,7 @@ const Producthome = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/Product20page/Producthero.png"
+                        src="/images/Product%20page/Producthero.png"
                         alt="Medical products showcase"
                         fill
                         className="object-cover"
