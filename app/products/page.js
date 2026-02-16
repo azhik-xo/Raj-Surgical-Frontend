@@ -1,13 +1,13 @@
+"use client";
+
 import Navbar from '@/components/Navbar';
-import ComingSoon from '@/components/ComingSoon';
+import Producthome from './Producthome';
 
-const Products = () => {
+export default function ProductsPage() {
   return (
-    <div>
+    <>
       <Navbar />
-      <ComingSoon  title="Products" />
-    </div>
+      <Producthome />
+    </>
   );
-};
-
-export default Products;
+}
