@@ -13,7 +13,7 @@ const Heroservice = () => {
         <span className="block font-normal">QUALITY MEETS YOUR</span>
         <span className="block font-light">BUDGET-FRIENDLY EXPERIENCES</span>
       </h1>
-      <p className={`mx-auto mt-6 max-w-2xl  text-gray-600 text-sm sm:text-base ${inter.className} leading-relaxed`}>
+      <p className={`mx-auto px-4 mt-3 md:mt-6 max-w-2xl  text-gray-600 text-sm sm:text-base ${inter.className} leading-relaxed`}>
         Quality products that support better care at every stage of treatment. Quality products that support better care at every stage of treatment.
       </p>
       <div className="mt-2 flex justify-center">
