@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
             text: "Lorem ipsum dolor sit amet consectetur. At sodales metus morbi enim iaculis adipiscing.",
             name: "Rebecca Phillips",
             title: "London, UK",
-            rating: 5
+            rating: 4
         },
         {
             id: 3,
